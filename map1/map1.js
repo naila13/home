@@ -1,5 +1,8 @@
-var map1obj = L.map('map1_id').setView([32.18, -99.14], 4)
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map1obj)
+var map1obj = L.map('map1id').setView([32.18, -99.14], 4)
+var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
 var map1MarkerObject = L.marker([30, -90]).addTo(map1obj)
 var map1PolygonObject = L.polygon([
   [31, -88],
