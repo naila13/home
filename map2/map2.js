@@ -1,4 +1,4 @@
-var map2obj = L.map('map2id').setView([42.18, -93.14], 20)
+var map2obj = L.map('map2id').setView([42.18, -93.14], 10)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map2obj)
 L.tileLayer.wms('http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi', {
   layers: 'nexrad-n0r-900913',
